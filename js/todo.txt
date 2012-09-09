@@ -1,0 +1,17 @@
++double check position in 4x4 grid of tetrimonos (consistent with Gameboy?)
++clean project and put online!
+[DONE] control tweaks (e.g. hold left to keep moving left)
+[DONE] flashing effect for line clear
+[DONE] scoring (http://tetris.wikia.com/wiki/Scoring)
+[DONE] implement collision between block and game area boundaries
+[DONE] implement collision between falling and static blocks
+[DONE] merge tetrimono with board on collision
+[DONE] make tetrimono fall a line a row at a time, not a pixel at a time
+[DONE] 7 bag randomiser for pieces
+[DONE] rename pieces to official names (O, I, J, L, S, Z, T)
+[DONE] put all tetris parts in a separate file
+[DONE] clearing lines
+[DONE] game over condition
+[DONE] music and sfx
+[DONE] correct speed for each level
+[DONE] add scaling to screen class and scale 2-4 times size

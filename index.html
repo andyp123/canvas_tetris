@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Canvas Tetris</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- SYSTEM SCRIPTS -->
+		<script type="text/javascript" src="js/system/seedrandom.js"></script>
+		<script type="text/javascript" src="js/system/vector2.js"></script>
+		<script type="text/javascript" src="js/system/sprite.js"></script>
+		<script type="text/javascript" src="js/system/collision2d.js"></script>
+		<script type="text/javascript" src="js/system/assetmanager.js"></script>
+		<script type="text/javascript" src="js/system/soundmanager.js"></script>
+		<script type="text/javascript" src="js/system/renderlist.js"></script>
+		<script type="text/javascript" src="js/system/scratchpool.js"></script>
+		<script type="text/javascript" src="js/system/system.js"></script>
+		<script type="text/javascript" src="js/system/util.js"></script>
+		<script type="text/javascript" src="js/system/font.js"></script>
+		<script type="text/javascript" src="js/system/ui.js"></script>
+		<script type="text/javascript" src="js/system/particlesystem.js"></script>
+		<!-- GAME SCRIPTS -->
+		<script type="text/javascript" src="js/game/tetris.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+		
+		<script type="text/javascript">
+			g_SCALE = 2;
+		</script>
+	</head>
+
+	<body onload='sys_startup(game_init, game_main, 60)' style='background-color:black; color:white'>
+		<div>
+			<div style='display: inline-block; vertical-align: top'>
+				<canvas id='screen' style='position: fixed; background-color:#888888; visibility:hidden'></canvas>
+				<canvas id='screenScaled' style='background-color:#888888'></canvas>
+			</div>
+			<!--div style='display: inline-block; vertical-align: top' class='debug'>
+				<p id='keystates'>[keystates]</p>
+				<p id='debug'>[debug]</p>
+			</div-->
+		</div>
+	</body>
+</html>

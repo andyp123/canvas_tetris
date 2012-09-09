@@ -1,0 +1,9 @@
+div.debug {
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-size: 12px;
+	text-align: left;
+	color: #00FF00;
+	visibility: visible;
+}

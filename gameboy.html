@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Canvas Tetris</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- SYSTEM SCRIPTS -->
+		<script type="text/javascript" src="js/system/seedrandom.js"></script>
+		<script type="text/javascript" src="js/system/vector2.js"></script>
+		<script type="text/javascript" src="js/system/sprite.js"></script>
+		<script type="text/javascript" src="js/system/collision2d.js"></script>
+		<script type="text/javascript" src="js/system/assetmanager.js"></script>
+		<script type="text/javascript" src="js/system/soundmanager.js"></script>
+		<script type="text/javascript" src="js/system/renderlist.js"></script>
+		<script type="text/javascript" src="js/system/scratchpool.js"></script>
+		<script type="text/javascript" src="js/system/system.js"></script>
+		<script type="text/javascript" src="js/system/util.js"></script>
+		<script type="text/javascript" src="js/system/font.js"></script>
+		<script type="text/javascript" src="js/system/ui.js"></script>
+		<script type="text/javascript" src="js/system/particlesystem.js"></script>
+		<!-- GAME SCRIPTS -->
+		<script type="text/javascript" src="js/game/tetris.js"></script>
+		<script type="text/javascript" src="js/game.js"></script>
+	</head>
+
+	<body onload='sys_startup(game_init, game_main, 60)' style='background-color:black; color:white'>
+		<div>
+			<div style='display: inline-block; vertical-align: top'>
+				<img src='gfx/gameboy_small.png' style='position:fixed'>
+				<canvas id='screen' style='position:fixed; left:84px; top:78px; background-color:#888888; visibility:hidden'></canvas>
+				<canvas id='screenScaled' style='background-color:#888888'></canvas>
+			</div>
+			<div style='display: inline-block; vertical-align: top; position: fixed; left:340px; width:340px'>
+				<h1>Canvas Tetris</h1>
+				<p>
+				Canvas Tetris is a fairly close copy of the core gameplay of the original
+				Gameboy Tetris using HTML5 canvas and audio and written in Javascript.
+				</p><p>
+				The game code is all contained in a file called tetris.js, but it was
+				built on top of my little canvas game library, so there are a lot of
+				functions contained in other files that it relies on. It would be nice
+				to have the whole game working from one single file, but I haven't bothered
+				to do the neccessary work yet.
+				</p><p>
+				All the graphics and sounds, with the exception of line clear, which I
+				couldn't find a clean sample of, are ripped from screenshots or samples
+				on the internet, so it's all very definitely in dubious legal territory.
+				The code is not copyright, however, so feel free to take and reuse anything
+				you like.
+				</p><p>
+				<b>Controls:</b><br>
+				left - move block left<br>
+				right - move block right<br>
+				up - rotate block clockwise<br>
+				down - drop block<br>
+				</p>
+			</div>
+			<!--div style='display: inline-block; vertical-align: top' class='debug'>
+				<p id='keystates'>[keystates]</p>
+				<p id='debug'>[debug]</p>
+			</div-->
+		</div>
+	</body>
+</html>
