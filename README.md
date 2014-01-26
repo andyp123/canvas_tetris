@@ -9,5 +9,5 @@ of the game, so I ripped graphics from screenshots I found on the internet and g
 sound effects as I could find from videos.
 
 It seems to work! Space to start the game, the arrow keys move the Tetrimonos.
-Game: https://rawgithub.com/andyp123/canvas_tetris/master/index.html
-Info: https://rawgithub.com/andyp123/canvas_tetris/master/gameboy.html
+
+https://rawgithub.com/andyp123/canvas_tetris/master/gameboy.html
